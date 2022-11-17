@@ -1,0 +1,16 @@
+{
+  "name": "express-ts-xata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vijayaraghavan Sundararaman <vijaygenius123@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "18.11.9",
+    "typescript": "4.9.3"
+  }
+}
