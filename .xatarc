@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Vijayaraghavan-Sundararaman-s-workspace-bg4g9l.us-east-1.xata.sh/db/vijaygenius123-job-board",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
