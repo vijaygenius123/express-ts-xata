@@ -1,0 +1,6 @@
+### Get All Jobs
+GET http://localhost:8080/api/jobs
+
+
+### Get Specific Job
+GET http://localhost:8080/api/jobs/rec_cdru8m947488r62an9lg
