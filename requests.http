@@ -4,3 +4,13 @@ GET http://localhost:8080/api/jobs
 
 ### Get Specific Job
 GET http://localhost:8080/api/jobs/rec_cdru8m947488r62an9lg
+
+### Create A Job
+POST http://localhost:8080/api/jobs
+Content-Type: application/json
+
+{
+    "city": "Edinburgh",
+    "company": "Google",
+    "title": "Dev"
+  }

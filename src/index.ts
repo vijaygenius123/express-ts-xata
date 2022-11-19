@@ -1,10 +1,12 @@
 import express from 'express'
 import dotenv from 'dotenv'
+import bodyParser from 'body-parser'
 import {getXataClient} from "./xata";
 
 dotenv.config()
 
 const app = express()
+app.use(bodyParser.json())
 const port = process.env.PORT || 8080;
 
 const xata = getXataClient();
@@ -24,6 +26,12 @@ app.get('/api/jobs/:id', async (req, res) => {
     const id = req.params.id
     const job = await xata.db.job.read(id)
     res.json({job})
+})
+
+app.post('/api/jobs', async (req, res) => {
+    const job = req.body
+    const createdJob = await xata.db.job.create(job)
+    res.json({job: createdJob})
 })
 
 app.listen(port, () => {
