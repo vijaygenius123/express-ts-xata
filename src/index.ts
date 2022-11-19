@@ -20,6 +20,12 @@ app.get('/api/jobs', async (req, res) => {
     res.json({jobs})
 })
 
+app.get('/api/jobs/:id', async (req, res) => {
+    const id = req.params.id
+    const job = await xata.db.job.read(id)
+    res.json({job})
+})
+
 app.listen(port, () => {
     console.log(`Server running on port http://localhost:${port}`)
 })
